@@ -87,7 +87,8 @@ const Right = styled.div`
 
 const Brand = styled.p`
   font-size: 28px;
-  font-family: Lobster;
+  font-family: 'Roboto Mono';
+  font-weight: 700;
   @media (max-width: 800px) {
     font-size: 32px;
   }
@@ -99,7 +100,7 @@ const HeaderLink = styled(Link)`
   padding: 0.25em;
   border-radius: 2px;
   font-size: 18px;
-  font-family: Roboto Mono;
+  font-family: 'Roboto Mono';
   text-decoration: none;
   color: #fafbfc;
   :hover {
