@@ -61,7 +61,7 @@ export const Header = ({ children }) => {
   const regularLinks = () => {
     return (
       <>
-        <HeaderLink to="/resume">Resume</HeaderLink>
+        {/* <HeaderLink to="/resume">Resume</HeaderLink> */}
         <HeaderLink to="/projects">Projects</HeaderLink>
         <HeaderLink to="/contact">Contact</HeaderLink>
         <HeaderLink to="/">
