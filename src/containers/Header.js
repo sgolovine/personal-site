@@ -17,7 +17,7 @@ const paths = {
 
 const fallback = 'Sunny Golovine'
 
-export const Header = ({ children }) => {
+export const Header = () => {
   const renderTitle = () => {
     return (
       <Location>
@@ -106,7 +106,6 @@ const Container = styled.div`
   @media (max-width: 800px) {
     flex-direction: column;
     justify-content: center;
-    margin-top: 1.5em;
   }
 `
 
