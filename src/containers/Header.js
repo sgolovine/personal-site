@@ -4,28 +4,85 @@ import Headroom from 'react-headroom'
 import { FaHome } from 'react-icons/fa'
 import { colors } from 'colors'
 import styled from 'styled-components'
-import icon from '@images/profile-small.png'
+import { Location } from '@reach/router'
+
+const toggleExperements = false
+
+const paths = {
+  '/': 'Sunny Golovine',
+  '/resume': 'Resume',
+  '/projects': 'Projects',
+  '/contact': 'Contact',
+}
+
+const fallback = 'Sunny Golovine'
 
 export const Header = ({ children }) => {
+  const renderTitle = () => {
+    return (
+      <Location>
+        {(props) => {
+          const { pathname } = props.location
+          return (
+            <Brand>{paths[pathname] || fallback}</Brand>
+          )
+        }}
+      </Location>
+    )
+  }
+
+  const experementalLinks = () => {
+    const paths = ['/resume', '/projects', '/contact']
+    return (
+      <Location>
+        {(props) => {
+          const { pathname } = props.location
+          const links = paths.map((path) => {
+            if (pathname !== path) {
+              return (
+                <HeaderLink to={path}>{path}</HeaderLink>
+              )
+            }
+          })
+          return (
+            <>
+              {links}
+
+              <HeaderLink to="/">
+                <HomeIcon />
+              </HeaderLink>
+            </>
+          )
+        }}
+      </Location>
+    )
+  }
+
+  const regularLinks = () => {
+    return (
+      <>
+        <HeaderLink to="/resume">Resume</HeaderLink>
+        <HeaderLink to="/projects">Projects</HeaderLink>
+        <HeaderLink to="/contact">Contact</HeaderLink>
+        <HeaderLink to="/">
+          <HomeIcon />
+        </HeaderLink>
+      </>
+    )
+  }
+
   return (
     <>
       <Headroom>
         <Container>
-          <Left>
-            <BrandIcon src={icon} />
-            <Brand>Sunny Golovine</Brand>
-          </Left>
+          <Left>{renderTitle()}</Left>
           <Right>
-            <HeaderLink to="/resume">Resume</HeaderLink>
-            <HeaderLink to="/projects">Projects</HeaderLink>
-            <HeaderLink to="/contact">Contact</HeaderLink>
-            <HeaderLink to="/">
-              <HomeIcon />
-            </HeaderLink>
+            {toggleExperements
+              ? experementalLinks()
+              : regularLinks()}
           </Right>
         </Container>
       </Headroom>
-      {children}
     </>
   )
 }

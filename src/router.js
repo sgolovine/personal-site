@@ -5,6 +5,7 @@ import Contact from 'pages/contact'
 import Resume from 'pages/resume'
 import { Router } from '@reach/router'
 import { Header } from 'containers/Header'
+import PageContainer from 'containers/PageContainer'
 
 const SiteRouter = () => (
   <Router>
@@ -17,8 +18,11 @@ const SiteRouter = () => (
 
 export default () => {
   return (
-    <Header>
-      <SiteRouter />
-    </Header>
+    <>
+      <Header />
+      <PageContainer>
+        <SiteRouter />
+      </PageContainer>
+    </>
   )
 }
