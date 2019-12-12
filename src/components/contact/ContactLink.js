@@ -29,10 +29,6 @@ const titles = {
 }
 
 export const ContactLink = ({ id, href }) => {
-  const [hovering, setHovering] = useState(false)
-  useEffect(() => {
-    console.log('hovering over', id)
-  }, [hovering])
   return (
     <ContactLinkItem
       href={href}
@@ -44,7 +40,6 @@ export const ContactLink = ({ id, href }) => {
       </SocialIconContainer>
       <ContactLinkTextContainer>
         {titles[id]}
-        <ExtraText>Hovering</ExtraText>
       </ContactLinkTextContainer>
     </ContactLinkItem>
   )
@@ -53,15 +48,22 @@ export const ContactLink = ({ id, href }) => {
 const ContactLinkItem = styled.a`
   display: flex;
   flex-direction: row;
+  width: 10em;
+  height: 2em;
+  align-items: center;
   text-decoration: none;
-  font-size: 22px;
-  margin-top: 0.5em;
-  margin-bottom: 0.5em;
-  align-items: flex-start;
+  margin-top: 1em;
+  margin-bottom: 1em;
 `
 
 const SocialIconContainer = styled.div`
   margin-right: 0.5em;
+  font-size: 22px;
+  justify-content: center;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
 `
 
 const ContactLinkTextContainer = styled.div`
@@ -69,8 +71,11 @@ const ContactLinkTextContainer = styled.div`
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  font-size: 22px;
+  justify-content: center;
+  font-family: Roboto Mono;
 `
 
 const ExtraText = styled(Text)`
-  align-self: flex-end;
+  ${'' /* align-self: flex-end; */}
 `
