@@ -1,5 +1,5 @@
-import React from "react";
+import React from 'react'
 
 export default () => {
-  return <p>Projects Page</p>;
-};
+  return <p>Projects Page</p>
+}

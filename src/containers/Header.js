@@ -1,10 +1,10 @@
-import React from "react";
-import { Link } from "@reach/router";
-import Headroom from "react-headroom";
-import { FaHome } from "react-icons/fa";
-import { colors } from "colors";
-import styled from "styled-components";
-import icon from "@images/profile-small.png";
+import React from 'react'
+import { Link } from '@reach/router'
+import Headroom from 'react-headroom'
+import { FaHome } from 'react-icons/fa'
+import { colors } from 'colors'
+import styled from 'styled-components'
+import icon from '@images/profile-small.png'
 
 export const Header = ({ children }) => {
   return (
@@ -27,15 +27,15 @@ export const Header = ({ children }) => {
       </Headroom>
       {children}
     </>
-  );
-};
+  )
+}
 
 const BrandIcon = styled.img`
   height: 36px;
   width: 36px;
   margin-left: 5px;
   margin-right: 5px;
-`;
+`
 
 const Container = styled.div`
   width: 100%;
@@ -51,7 +51,7 @@ const Container = styled.div`
     justify-content: center;
     margin-top: 1.5em;
   }
-`;
+`
 
 const Left = styled.div`
   margin-left: 5em;
@@ -62,7 +62,7 @@ const Left = styled.div`
     margin-left: unset;
     align-self: center;
   }
-`;
+`
 
 const Right = styled.div`
   display: flex;
@@ -83,7 +83,7 @@ const Right = styled.div`
     margin-left: unset;
     margin-right: unset;
   }
-`;
+`
 
 const Brand = styled.p`
   font-size: 28px;
@@ -91,7 +91,7 @@ const Brand = styled.p`
   @media (max-width: 800px) {
     font-size: 32px;
   }
-`;
+`
 
 const HeaderLink = styled(Link)`
   margin-left: 0.5em;
@@ -110,8 +110,8 @@ const HeaderLink = styled(Link)`
     margin-left: unset;
     margin-right: unset;
   }
-`;
+`
 
 const HomeIcon = styled(FaHome)`
   align-self: center;
-`;
+`
