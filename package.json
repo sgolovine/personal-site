@@ -8,12 +8,11 @@
   "main": "index.js",
   "scripts": {
     "start": "parcel serve --port 3000 index.html --open",
+    "build": "parcel build --detailed-report 10 index.html",
     "prettier": "prettier --config ./.prettierrc --write 'src/**/*.js'"
   },
   "dependencies": {
     "@reach/router": "^1.2.1",
-    "containers": "^0.0.1",
-    "pages": "^0.0.16",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-headroom": "^3.0.0",

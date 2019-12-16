@@ -75,7 +75,3 @@ const ContactLinkTextContainer = styled.div`
   justify-content: center;
   font-family: Roboto Mono;
 `
-
-const ExtraText = styled(Text)`
-  ${'' /* align-self: flex-end; */}
-`
