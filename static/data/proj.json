@@ -43,6 +43,50 @@
           "icon": "github"
         }
       ]
+    },
+    {
+      "name": "param tool",
+      "description": "Simple URL Paramater Tool",
+      "sites": [
+        {
+          "url": "https://pt.sunny.sh",
+          "icon": "web"
+        },
+        {
+          "url": "http://github.com/sgolovine/param-tool",
+          "icon": "github"
+        }
+      ]
+    },
+    {
+      "name": "Newsfreak",
+      "description": "A newsreader I built while learing React",
+      "sites": [
+        {
+          "url": "https://github.com/newsfreak",
+          "icon": "github"
+        }
+      ]
+    },
+    {
+      "name": "Roll your Gopher",
+      "description": "A technical primer on creating gopherspaces",
+      "sites": [
+        {
+          "url": "https://github.com/sgolovine/roll-your-gopher",
+          "icon": "github"
+        }
+      ]
+    },
+    {
+      "name": "Transmit",
+      "description": "A project I worked on in college. Preserved with it's orginal spaghetti code, awful practices, and other things college me thought was a good idea",
+      "sites": [
+        {
+          "url": "https://github.com/sgolovine/transmit",
+          "icon": "github"
+        }
+      ]
     }
   ]
 }

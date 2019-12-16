@@ -52,7 +52,6 @@ const HeaderContainer = styled.div`
   display: flex;
   flexdirection: row;
   align-items: flex-end;
-  width: 40%;
 `
 
 const SitesContainer = styled.div`
