@@ -45,7 +45,7 @@ export const ProjectCard = (props) => {
 }
 
 const ProjectCardContainer = styled.div`
-  margin-bottom: 3em;
+  height: 120px;
 `
 
 const HeaderContainer = styled.div`
