@@ -6,4 +6,7 @@ export default styled.div`
   flex-direction: column;
   flex-wrap: wrap;
   max-width: 800px;
+  @media (max-width: 800px) {
+    padding: 1em;
+  }
 `

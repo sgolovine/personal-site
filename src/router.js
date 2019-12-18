@@ -2,7 +2,6 @@ import React from 'react'
 import Home from 'pages/home'
 import Projects from 'pages/projects'
 import Contact from 'pages/contact'
-import Resume from 'pages/resume'
 import { Router } from '@reach/router'
 import { Header } from 'containers/Header'
 import PageContainer from 'containers/PageContainer'
@@ -12,7 +11,6 @@ const SiteRouter = () => (
     <Home path="/" />
     <Projects path="/projects" />
     <Contact path="/contact" />
-    <Resume path="/resume" />
   </Router>
 )
 

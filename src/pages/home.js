@@ -70,7 +70,6 @@ export default () => {
       <Section marginTop={50} marginBottom={0}>
         <Text>
           If you want to learn more you can check out my{' '}
-          <Link to="/resume">resume</Link>,{' '}
           <Link to="/projects">projects</Link>, or{' '}
           <Link to="/contact">get in touch</Link>
         </Text>
