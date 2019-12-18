@@ -1,5 +1,5 @@
 import React from 'react'
-import contact from '~/static/data/contact.json'
+import contact from '@data/contact.json'
 import { ContactLink } from 'components/contact/ContactLink'
 import styled from 'styled-components'
 

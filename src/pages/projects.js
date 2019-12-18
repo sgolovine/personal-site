@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import JSONProjectsData from '~/static/data/proj.json'
+import JSONProjectsData from '@data/proj.json'
 import { ProjectCard } from '../components/projects/ProjectCard'
 
 export default () => {
