@@ -1,7 +1,5 @@
 # My Personal Website
 
-[glvn.co](http://glvn.co)
-
 ## Editing site Content
 
 - Editing Projects: Projects can be edited by adding or removing values from `/static/data/proj.json`
