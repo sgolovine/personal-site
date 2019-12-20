@@ -1,5 +1,7 @@
 # My Personal Website
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/a6602481-eee7-4037-b503-8cb174b1ec47/deploy-status)](https://app.netlify.com/sites/glvn/deploys)
+
 ## Editing site Content
 
 - Editing Projects: Projects can be edited by adding or removing values from `/static/data/proj.json`
