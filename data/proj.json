@@ -49,10 +49,6 @@
       "description": "Simple URL Paramater Tool",
       "sites": [
         {
-          "url": "https://pt.sunny.sh",
-          "icon": "web"
-        },
-        {
           "url": "http://github.com/sgolovine/param-tool",
           "icon": "github"
         }
@@ -84,6 +80,16 @@
       "sites": [
         {
           "url": "https://github.com/sgolovine/transmit",
+          "icon": "github"
+        }
+      ]
+    },
+    {
+      "name": "This website",
+      "description": "Source code for this website, build with React + Parcel",
+      "sites": [
+        {
+          "url": "https://github.com/sgolovine/personal-site",
           "icon": "github"
         }
       ]
